@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>black secret.</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="frame">
+  <div class="scene">
+    <img class="bg-image" src="img/background.png" alt="Black hole">
+    <div class="scene-overlay"></div>
+    <div class="disk-swirl"></div>
+
+    <nav class="nav" data-reveal>
+      <div class="logo">
+        <svg class="logo-full" viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="blnkhole." style="height:34px;width:auto;display:block;">
+          <g fill="none" stroke="#EDE8DD" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <!-- B -->
+            <g transform="translate(25,40)">
+              <path d="M8,0 L8,140"/>
+              <path d="M8,0 C45,0 45,32 20,40"/>
+              <path d="M25,50 C55,58 55,110 15,118"/>
+            </g>
+            <!-- L1 -->
+            <g transform="translate(107,40)">
+              <path d="M10,0 L10,120"/>
+              <path d="M10,120 L26,124"/>
+            </g>
+            <g fill="#EDE8DD" stroke="none">
+              <circle cx="140" cy="167" r="4"/>
+              <circle cx="150" cy="169" r="3"/>
+              <circle cx="159" cy="170.5" r="2"/>
+            </g>
+            <!-- N -->
+            <g transform="translate(189,40)">
+              <path d="M8,140 L8,0"/>
+              <path d="M8,0 L30,55"/>
+              <path d="M38,75 L52,140"/>
+              <path d="M52,140 L52,0"/>
+            </g>
+            <!-- K -->
+            <g transform="translate(271,40)">
+              <path d="M8,0 L8,140"/>
+              <path d="M14,62 L48,10"/>
+              <path d="M20,78 L52,140"/>
+            </g>
+            <!-- H -->
+            <g transform="translate(353,40)">
+              <path d="M8,0 L8,140"/>
+              <path d="M52,0 L52,140"/>
+              <path d="M14,68 L24,68"/>
+              <path d="M36,68 L46,68"/>
+            </g>
+            <circle cx="383" cy="108" r="4" fill="#EDE8DD" stroke="none"/>
+            <!-- O -->
+            <g transform="translate(435,40)">
+              <circle cx="30" cy="70" r="30"/>
+              <ellipse cx="30" cy="70" rx="34" ry="8" transform="rotate(-16 30 70)" stroke-width="3"/>
+            </g>
+            <!-- L2-->
+            <g transform="translate(517,40)">
+              <path d="M10,0 L10,88"/>
+              <path d="M10,98 L10,118"/>
+              <path d="M10,118 A20,20 0 0 0 30,140"/>
+              <path d="M30,140 L55,140"/>
+            </g>
+            <!-- E -->
+            <g transform="translate(599,40)">
+              <path d="M8,0 L8,140"/>
+              <path d="M8,0 L50,0"/>
+              <path d="M20,68 L48,68"/>
+              <path d="M8,140 L45,140"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <ul class="nav-links">
+        <li><a href="https://arxiv.org/pdf/2110.08629">What is Black Hole?</a></li>
+        <li><a href="https://arxiv.org/pdf/2110.08629">Thesis</a></li>
+        <li><a href="https://arxiv.org/pdf/2406.01705">Dark Energy</a></li>
+        <li><a href="https://science.nasa.gov/universe/black-holes/">Facts</a></li>
+      </ul>
+      <button class="menu-icon" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="hero-text" data-reveal data-delay="1">
+      <div class="title-line" id="line1">
+        <span class="letter-hover tw-letter">B</span><span class="letter-hover tw-letter">L</span><span class="letter-hover tw-letter">A</span><span class="letter-hover tw-letter">C</span><span class="letter-hover tw-letter">K</span>
+      </div>
+      <div class="title-line scatter" id="line2">
+        <span class="letter-hover tw-letter">S</span><span class="letter-hover tw-letter">E</span><span class="letter-hover tw-letter">C</span><span class="letter-hover tw-letter">R</span><span class="letter-hover tw-letter">E</span><span class="letter-hover tw-letter">T</span>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="bottom-left" data-reveal data-delay="2">
+        <div class="carousel-arrows">
+          <button class="arrow-btn" id="prevBtn" aria-label="Previous">&#8249;</button>
+          <button class="arrow-btn" id="nextBtn" aria-label="Next">&#8250;</button>
+        </div>
+        <p class="tagline" id="tagline">one star's end is a black hole's beginning..</p>
+      </div>
+      <button class="explore-btn" id="exploreBtn" data-reveal data-delay="3">
+        <span>Explore</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile fullscreen menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#">What is Black Hole?</a></li>
+        <li><a href="#">Thesis</a></li>
+        <li><a href="#">Dark Energy</a></li>
+        <li><a href="#">Facts</a></li>
+      </ul>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="warp-overlay" id="warpOverlay"></div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
